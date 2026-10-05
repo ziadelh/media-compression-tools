@@ -1,6 +1,6 @@
 # Media Compression Tools
 
-Two tools for working with audio and video formats in Python: a **lossless audio codec** built from scratch with Rice coding, and an **automatic film format checker and converter** built on ffprobe and ffmpeg.
+Two tools for working with audio and video formats in Python: a **lossless audio codec** built from scratch with Rice coding (the encoder and decoder are my own, with no compression library), and an **automatic film format checker and converter** built on ffprobe and ffmpeg.
 
 | Tool | Notebook | Run it |
 |---|---|---|
