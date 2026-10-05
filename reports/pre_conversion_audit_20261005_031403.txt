@@ -1,0 +1,31 @@
+Narbonne Festival — Pre-Conversion Audit Report
+Cosmos_War_of_the_Planets.mp4: FAIL
+  - resolution: expected 640x360, found 628x354
+  - frame rate: expected 25.000, found 29.97002997002997
+  - audio bitrate: expected ≤ 256 kb/s, found 317 kb/s
+
+Last_man_on_earth_1964.mov: FAIL
+  - video codec: expected h.264, found prores
+  - audio codec: expected aac, found pcm_s16le
+  - frame rate: expected 25.000, found 23.976023976023978
+  - video bitrate: expected 2–5 Mb/s, found 9 Mb/s
+  - audio bitrate: expected ≤ 256 kb/s, found 2 Mb/s
+
+The_Gun_and_the_Pulpit.avi: FAIL
+  - container: expected mp4, found avi
+  - video codec: expected h.264, found rawvideo
+  - audio codec: expected aac, found pcm_s16le
+  - resolution: expected 640x360, found 720x404
+  - video bitrate: expected 2–5 Mb/s, found 87 Mb/s
+  - audio bitrate: expected ≤ 256 kb/s, found 2 Mb/s
+
+The_Hill_Gang_Rides_Again.mp4: FAIL
+  - video bitrate: expected 2–5 Mb/s, found 8 Mb/s
+
+Voyage_to_the_Planet_of_Prehistoric_Women.mp4: FAIL
+  - video codec: expected h.264, found hevc
+  - audio codec: expected aac, found mp3
+  - frame rate: expected 25.000, found 29.97002997002997
+  - video bitrate: expected 2–5 Mb/s, found 8 Mb/s
+  - audio bitrate: expected ≤ 256 kb/s, found 320 kb/s
+

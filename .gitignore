@@ -1,0 +1,6 @@
+output/
+converted/
+films/
+films.zip
+.ipynb_checkpoints/
+__pycache__/
