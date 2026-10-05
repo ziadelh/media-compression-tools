@@ -24,7 +24,7 @@ An encoder and decoder for 16-bit WAV files, with its own `.ex2` file format. A 
 
 **Why the two files behave so differently.** A Rice code spends `q + 1 + k` bits on a value, where `q` is the value divided by `2^k`. Sound1's prediction residuals are small (about 72 on average), so a small `k` is cheap and it compresses well. Sound2's residuals are about 100 times larger (about 7,100 on average), so with `k = 2` the unary part runs to thousands of bits per sample and the "compressed" file ends up 220 times bigger than the original. Choosing `k` from the size of the residuals fixes it: the best `k` is roughly the base-2 logarithm of their mean.
 
-**Speed.** The notebook keeps the simple one-bit-at-a-time encoder and decoder as a reference, and adds a NumPy encoder and a 64-bit-lookup decoder that produce **byte-identical output** (the notebook checks this). A full run, including the 225 MB file that `Sound2` at `k = 2` creates, takes about five minutes.
+**Speed.** The notebook keeps the simple one-bit-at-a-time encoder and decoder as a reference, and adds a NumPy encoder and a 64-bit-lookup decoder that produce **byte-identical output**. The notebook checks this on a slice of both files, and I also compared the whole 225 MB file that `Sound2` at `k = 2` creates. The reference encoder alone needs about 19 minutes for that one file, while the whole notebook with the fast codec runs in about five minutes.
 
 ## 2. Film format checker and converter
 
